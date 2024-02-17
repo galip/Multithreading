@@ -6,7 +6,7 @@ public class ReentrantLock {
 
 	private static int counter = 0;
 	private static Lock lock = new java.util.concurrent.locks.ReentrantLock();
-	// If fairness paramter is set to be TRUE the longest thread will get the lock
+	// If fairness parameter is set to be TRUE then longest thread will get the lock
 
 	private static void increment() {
 
