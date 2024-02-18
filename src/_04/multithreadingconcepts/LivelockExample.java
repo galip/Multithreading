@@ -26,7 +26,7 @@ public class LivelockExample {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			
+
 			System.out.println("worker1 tries to get lock2.");
 
 			if (lock2.tryLock()) {
@@ -52,7 +52,7 @@ public class LivelockExample {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			
+
 			System.out.println("worker2 tries to get lock1");
 
 			if (lock1.tryLock()) {
@@ -71,7 +71,6 @@ public class LivelockExample {
 }
 
 // When livelock exists, thread are not blocked. They are too busy to respond each other.
-
 
 //worker1 tries to get lock2.
 //worker1 can not acquire lock2.
